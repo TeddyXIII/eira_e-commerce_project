@@ -8,7 +8,7 @@
 <body>
 
     <?php
-        include 'src/features/layouts/top-nav.php'
+        include '../features/layouts/top-nav.php'
     ?>
 
     <div class="title">
