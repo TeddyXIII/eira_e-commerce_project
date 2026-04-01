@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <?php include '../features/layouts/top-nav.php' ?>
+    <?php
+    include '../features/layouts/top-nav.php';
+    include '../features/layouts/basket-panel.html';
+    ?>
+
 
     <!-- artworks -->
     <?php
@@ -22,16 +26,17 @@
         <?php while ($row = mysqli_fetch_assoc($result)): ?>
 
             <?php
-            $imageData = base64_encode($row['Artwork_Image']);
-            $src = 'data:image/jpeg;base64,' . $imageData; ?>
+            $fileName = $row['image_path'];
+            $src = "src/assets/images/artworks/" . $fileName;
+            ?>
 
             <div class="card">
-                <a href="product_details.php?id=<?php echo $row['id']; ?>" class="card-link">
+                <a href="product_details.php?id=<?php echo $row['Artwork_Id']; ?>" class="card-link">
                     <div class="card-content">
-                        <div class="card-info">
+                        <div class="card-info"> 
                             <img src="<?php echo $src; ?>" alt="artwork">
-                            <div class="artwork-title"><?php echo $row['Artwork-Title']; ?></div>
-                            <div class="artwork-artist"><?php echo $row['Artist-Name']; ?></div>
+                            <div class="artwork-title"><?php echo $row['Artwork_Title']; ?></div>
+                            <div class="artwork-artist"><?php echo $row['Artist_Name']; ?></div>
                             <div class="artwork-price">$<?php echo $row['Price']; ?></div>
                             <div class="artwork-size"><?php echo $row['Dimensions']; ?></div>
                         </div>
