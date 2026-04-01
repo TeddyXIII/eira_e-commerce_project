@@ -5,10 +5,10 @@ pages-layout.md
 
 # scripts
 scrapers/
-src/assets/images/artworks/download_artworks.py
 
 # components
 src/features/components/artwork-card.php
+src/features/layouts/basket-panel.php
 
 # environment, dependencies
 node_modules/
