@@ -13,15 +13,15 @@
         </img>
     </div>
 
-    <div class="menu-list">
+    <nav id="menu-list">
         <ul>
-            <li>Artworks</li>
-            <li>Cart</li>
-            <li>Profile</li>
-            <li>Contact</li>
-            <li>About</li>
+            <li><a href="exhibition.html">Exhibition</a></li>
+            <li><a href="basket.html">Basket</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="home.php #about">About</a></li>
         </ul>
-    </div>
+    </nav>
 
 </body>
 </html>

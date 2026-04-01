@@ -1,0 +1,176 @@
+/* GENERAL */
+:root {
+    --font-family:'Graziemille', serif;
+    --font-logo: 'Lunette', serif;
+    --primary-color: #fff5dd;
+    --secondary-color: #660033;
+    --big-text-color: #271515;
+    --small-text-color: ;
+    --p-color: ;
+}
+
+@font-face {
+    font-family:'Graziemille';
+    src: url(/eira/src/assets/fonts/GrazieMille-Regular.otf) format('opentype');
+    /* use an online tool convert otf file to woff2 */
+    font-weight: normal;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family:'Lunette';
+    src: url(/eira/src/assets/fonts/Lunette.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+* {
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+a {
+    color: #660033;
+}
+
+body { 
+    background: var(--primary-color); 
+    box-sizing: border-box;
+}
+
+/* onboarding screen */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--big-text-color);
+}
+
+#text-1{
+    line-height: 1.75;
+    padding: 20px 10%;
+    font-size: clamp(0.8rem, 1vw, 1rem)
+}
+
+#text-2 {   
+    padding: 20px 10%;
+    font-size: clamp(1.5rem, 2vw, 1.8rem) /* font-size: clamp(min, preferred, max) */
+}
+#text-2, #text-1 {
+    letter-spacing: .25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.hero-logo h2 a{
+    font-family: var(--font-logo);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    color: black;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.enter-shop {
+
+}
+
+#login-link a {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+
+
+/* BOTTOM NAV */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5%; 
+    box-sizing: border-box;
+    gap: 2rem; 
+    letter-spacing: .15em;
+}
+
+#langs a{
+    text-decoration: none;
+    color: var(--big-text-color);
+    font-size: 0.8rem;
+}
+
+#langs {
+    display: flex;
+    gap: 15px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*do for moon as well*/
+.theme-toggle #hover-icon {
+    display: none;
+}
+.theme-toggle:hover #default-icon{
+    display: none;
+}
+.theme-toggle:hover #hover-icon {
+    display: block;
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+.socials {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+}
+.socials a{
+    text-decoration: none;
+    color: var(--big-text-color);
+    font-size: 0.8rem;
+}

@@ -1,1 +1,16 @@
+# documentation
 tests/
+references/
+pages-layout.md
+
+# scripts
+scrapers/
+src/assets/images/artworks/download_artworks.py
+
+# components
+src/features/components/artwork-card.php
+
+# environment, dependencies
+node_modules/
+.venv/
+*.json
