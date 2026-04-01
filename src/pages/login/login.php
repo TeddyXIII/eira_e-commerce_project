@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../database/db_connect.php';
+include '../../database/config.php';
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

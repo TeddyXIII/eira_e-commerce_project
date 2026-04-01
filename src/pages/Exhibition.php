@@ -10,13 +10,12 @@
 <body>
     <?php
     include '../features/layouts/top-nav.php';
-    include '../features/layouts/basket-panel.html';
+    include '../features/layouts/basket-panel.php';
     ?>
-
 
     <!-- artworks -->
     <?php
-    include '../../database/db_connect.php';
+    include '../../database/config.php';
 
     $sql = "SELECT * from artworks";
     $result = mysqli_query($conn, $sql)
