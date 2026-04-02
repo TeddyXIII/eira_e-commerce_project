@@ -2,6 +2,7 @@
 tests/
 references/
 pages-layout.md
+Contact-Form/
 
 # scripts
 scrapers/
@@ -13,4 +14,3 @@ src/features/layouts/basket-panel.php
 # environment, dependencies
 node_modules/
 .venv/
-*.json

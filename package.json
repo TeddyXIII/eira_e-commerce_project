@@ -1,0 +1,28 @@
+{
+  "name": "eira_e-commerce_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scraper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeddyXIII/eira_e-commerce_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TeddyXIII/eira_e-commerce_project/issues"
+  },
+  "homepage": "https://github.com/TeddyXIII/eira_e-commerce_project#readme",
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
